@@ -1,0 +1,100 @@
+.quiz-container-create{
+
+  background-color: #676767;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 50px;
+  margin: 50px auto;
+  border-radius: 20px;
+  color: #fff;
+  gap: 20px;
+
+  .quiz-form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .quiz-label{
+
+      display: flex;
+      gap: 10px;
+    }
+
+    .question-box{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .question-box-title{
+
+        font-size: 20px;
+      }
+
+      .questions-list{
+
+        position: relative;
+
+        .question-item{
+
+          .question-item-content{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .delete-question-button{
+
+              background: none;
+              border: none;
+              font-size: 16px;
+              color: #ff4d4d;
+            }
+          }
+        }
+      }
+
+      .question-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .options-container{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .options-list{
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .option-input-container{
+
+              .quiz-input{
+
+                width: 100%;
+                box-sizing: border-box;
+              }
+
+              .delete-option-button{
+                position: absolute;
+                right: 3px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: none;
+                border: none;
+                color: #ff4d4d;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
