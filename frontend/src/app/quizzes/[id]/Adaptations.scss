@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px){
+
+    .quiz-container{
+
+        .quiz-content{
+
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .quiz-container{
+
+        padding: 30px;
+
+        .quiz-content{
+
+            width: 220px;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./DetailPage.scss";
 import "./Adaptations.scss";
 import { fetchQuizzesById } from "@/utils/api";
@@ -8,7 +8,7 @@ import { fetchQuizzesById } from "@/utils/api";
 export default function page({ params }) {
   const [quiz, setQuiz] = useState(null);
 
-  const { id } = params;
+  const { id } = React.use(params);
 
   useEffect(() => {
     const getQuiz = async () => {
@@ -21,8 +21,6 @@ export default function page({ params }) {
     };
     getQuiz();
   }, [])
-
-  console.log(quiz);
   
 
   return (
