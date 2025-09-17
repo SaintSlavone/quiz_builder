@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import "./Header.scss";
-import { use } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Header(){
